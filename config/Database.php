@@ -1,9 +1,13 @@
 <?php 
     class Database {
-        private $host = 'eanl4i1omny740jw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
-        private $db_name = 'ie9eexb2umnjakop';
-        private $username = 'qx9pzx445wuxx8h9';
-        private $password = getenv('PASSWORD');
+        private $host = 'localhost';
+        private $db_name = 'world';
+        private $username = 'root';
+        private $password = '';
+        // private $host = 'eanl4i1omny740jw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
+        // private $db_name = 'ie9eexb2umnjakop';
+        // private $username = 'qx9pzx445wuxx8h9';
+        // private $password = getenv('PASSWORD');
         private $conn;
 
         public function connect() {
