@@ -7,8 +7,13 @@
         private $host = 'eanl4i1omny740jw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
         private $db_name = 'ie9eexb2umnjakop';
         private $username = 'qx9pzx445wuxx8h9';
-        private $password = getenv('PASSWORD');
+        private $password;
+        //private $password = getenv('PASSWORD');
         private $conn;
+
+        public function __construct() {
+            $this->password = getenv('PASSWORD');
+        }
 
         public function connect() {
             $this->conn = null;
